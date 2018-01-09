@@ -4,10 +4,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { SquareComponent } from './square/square.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SquareComponent
   ],
   imports: [
     BrowserModule,
