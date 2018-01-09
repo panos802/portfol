@@ -8,7 +8,8 @@
     height: 100px;
     width: 50px;
     transform-origin: left bottom; 
-    animation: updown-L 1s ease infinite;
+    animation: updown-L 1s ease 3;
+    /* animation: run-amok 500ms ease infinite; */
 }
 .r-square {
     position: absolute;
@@ -18,7 +19,8 @@
     height: 100px;
     width: 50px;
     transform-origin: right bottom; 
-    animation: updown-R 1s ease infinite;    
+    animation: updown-R 1s ease 3;    
+    /* animation: run-amok 500ms ease infinite; */
 }
 
 .eye {
@@ -28,32 +30,28 @@
 	-webkit-border-radius: 50%;
     border-radius: 50%;
     background-color: white;
-    animation: idle 1s ease infinite; 
+    animation: idle 1s ease 3; 
 }
 .left {
     position: absolute;
     top: 20px;
     /* background-color: cyan; */
+    animation: stare-l 200ms 4000ms linear 1 forwards;
 }
 .right {
     position: absolute;
     top: 20px;
     /* background-color: greenyellow; */
+    animation: stare-r 200ms 4000ms linear 1 forwards;
+    
 }
 
 /* KEYFRAMES */
 
 @keyframes idle {
-    0%   { transform: translateY(0)     }
-    50%  { transform: translateY(-5px)  }
-    100% { transform: translateY(0)     }
-}
-
-@keyframes jump {
-    0%   { transform: translateY(200px) }
-    40%  { transform: translateY(100px) }
-    60%  { transform: translateY(100px) }
-    100% { transform: translateY(200px) }
+    0%   { transform: translateY(0)    }
+    50%  { transform: translateY(-5px) }
+    100% { transform: translateY(0)    }
 }
 
 @keyframes updown-R {
@@ -65,4 +63,21 @@
     0%   { transform: scaleY(1)    skewX(0deg)    }
     50%  { transform: scaleY(1.05) skewX(-3deg) }
     100% { transform: scaleY(1)    skewX(0deg)    }
+}
+
+@keyframes run-amok {
+    0%   { transform: translateX(0px)  skewX(0deg)    }
+    50%  { transform: translateX(50px) skewX(20deg) }
+    100% { transform: translateX(50px) skewX(0deg) }
+}
+
+@keyframes stare-l {
+    0%   { left: 15px; transform: scaleY(1) }
+    50%  { left: 15px; transform: scaleY(0) }
+    100% { left: 15px; transform: scaleY(1) }
+}
+@keyframes stare-r {
+    0%   { left: 55px; transform: scaleY(1) }
+    50%  { left: 55px; transform: scaleY(0) }
+    100% { left: 55px; transform: scaleY(1) }
 }
