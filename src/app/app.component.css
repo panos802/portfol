@@ -193,8 +193,3 @@
     75%  { left: 55px; transform: scaleY(0) }
     100% { left: 55px; transform: scaleY(1) }
 }
-
-@keyframes appear {
-    from {opacity: 0}
-    to   {opacity: 1}
-}

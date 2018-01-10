@@ -4,10 +4,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

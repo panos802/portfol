@@ -1,0 +1,16 @@
+.gallery-wrapper {
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    animation: fadeIn 1s 6s ease forwards;
+    opacity: 0; 
+}
+
+/* KEYFRAMES */
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to   {opacity: 1}
+}
