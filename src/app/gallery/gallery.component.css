@@ -3,9 +3,15 @@
     justify-content: space-around;
     flex-wrap: wrap; */
     display: grid;
-    grid-template-columns: repeat(6 , 1fr);
+    grid-template-columns: 376px 188px 94px 376px 188px 94px ;
     animation: fadeIn 1s 6s ease forwards;
+    /* animation: fadeIn 1s  ease forwards; */
     opacity: 0; 
+}
+
+.png {
+    /* align-self: center; */
+    /* justify-self: center; */
 }
 
 /* KEYFRAMES */

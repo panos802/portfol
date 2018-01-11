@@ -4,4 +4,8 @@
 body, html {
     font-family: 'Roboto';
     /* font-weight: bold; */
+    background-color: rgb(216, 233, 238);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
